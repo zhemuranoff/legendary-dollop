@@ -1,1 +1,2 @@
-web: gunicorn myproject.wsgi --log-file -
+web: gunicorn myproject.wsgi
+web: gunicorn hello:immense-woodland-46178
