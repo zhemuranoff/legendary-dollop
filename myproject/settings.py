@@ -150,6 +150,5 @@ bot_test = telebot.TeleBot(API_TOKEN)
 
 # Set webhook
 if (WEBHOOK_URL_BASE+WEBHOOK_URL_PATH) != bot_test.get_webhook_info().url:
-    bot_test.delete_webhook()
     bot_test.set_webhook(url=WEBHOOK_URL_BASE + WEBHOOK_URL_PATH)
                # certificate=open(WEBHOOK_SSL_CERT, 'r'))
