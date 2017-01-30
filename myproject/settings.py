@@ -27,7 +27,7 @@ SECRET_KEY = '9r*slbbm@32$e*l62ljaf&*kf-1(*tb!703f9l7n*gm-9v@*%)'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["immense-woodland-46178.herokuapp.com"]
+ALLOWED_HOSTS = []
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 APPEND_SLASH = False
 
@@ -150,5 +150,6 @@ bot_test = telebot.TeleBot(API_TOKEN)
 
 # Set webhook
 if (WEBHOOK_URL_BASE+WEBHOOK_URL_PATH) != bot_test.get_webhook_info().url:
+    bot_test.delete_webhook()
     bot_test.set_webhook(url=WEBHOOK_URL_BASE + WEBHOOK_URL_PATH)
                # certificate=open(WEBHOOK_SSL_CERT, 'r'))
