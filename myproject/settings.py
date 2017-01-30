@@ -26,9 +26,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '9r*slbbm@32$e*l62ljaf&*kf-1(*tb!703f9l7n*gm-9v@*%)'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ["myproject-zhemuranoff.c9users.io"]
+ALLOWED_HOSTS = ["immense-woodland-46178.herokuapp.com"]
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 APPEND_SLASH = False
 
@@ -141,7 +141,7 @@ STATICFILES_DIRS = (
 
 
 API_TOKEN = '279802369:AAG11qQrJlySYTmozSq4Jno0ekNP7RbBdlc'
-WEBHOOK_HOST = "limitless-stream-98892.herokuapp.com"
+WEBHOOK_HOST = "immense-woodland-46178.herokuapp.com"
 WEBHOOK_PORT = "443"
 #WEBHOOK_SSL_CERT = './webhook_cert.pem' # Path to the ssl certificate
 #WEBHOOK_SSL_PRIV = './webhook_pkey.pem' # Path to the ssl private key
