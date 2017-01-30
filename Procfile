@@ -1,2 +1,2 @@
 web: gunicorn myproject.wsgi
-web: gunicorn hello:immense-woodland-46178
+web: gunicorn bot_test:immense-woodland-46178
